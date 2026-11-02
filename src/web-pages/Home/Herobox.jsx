@@ -33,7 +33,7 @@ const Herobox = () => {
             <Row className=" g-0">
                 <Col md={6} className="hero-section1 px-md-5 pt-md-5">
                     <Dynamicstar starHeader="home-star" size={80}/>
-                    <p className="title mb-3 pt-md-4 mt-md-5">WE ARE PRESTIGE</p>
+                    <p className="title mb-md-3 mb-0 pt-md-4 mt-md-5 mt-4">WE ARE PRESTIGE</p>
 
                     <h1 className="mb-3" style={heroT}>Professional Cleaning Service You Can Trust</h1>
 
@@ -44,7 +44,7 @@ const Herobox = () => {
                             <ButtonComp address="/Login" buttonClass="butBrownClass" buttonText="Book Online"/>
                         </div>
                         <div className="d-flex align-items-center gap-2">
-                            <PlayComponent/>
+                            <PlayComponent sizePlay={21} stylePlay={{color: "white"}} />
                             <p className="mb-0" style={heroT2}>Watch Our Story</p>
                         </div>
                     </div>

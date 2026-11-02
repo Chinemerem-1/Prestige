@@ -37,6 +37,19 @@
   color: #ffffff !important;
 }
 
+@media screen and (max-width: 768px) {
+    .custom-service-dropdown .dropdown-menu {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+    min-width: 280px;          /* Makes the card wide like Figma */
+    margin-top: 0px !important; /* Adds breathing room below the navbar */
+    left: 0% !important;
+    transform: translateX(0%) !important; /* Centers it nicely under "Service" */
+}
+}
+
 /* herobox commponent */
 
 .hero-comp {
@@ -79,34 +92,68 @@
 
 /* details-section-component  */
 
+.img-col-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    aspect-ratio: 1 / 0.9;
+}
+
+.main-img-holder {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    width: 100%;
+  /* height: 75%; */
+    z-index: 1;
+}
+
 .slideshow-img-holder {
-    position: absolute;
-    bottom: -60px;
-    left: px;
-    /* width: 62%; */
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 75%;
+    height: 100%;
+    margin-top: -50px;
     z-index: 2;
+    position: relative;
 }
 
 .slide-transition {
     transition: opacity 0.4s ease-in-out;
 }
 
-.play-button {
-    position: absolute;
-    left: 45%;
-    top: 45%;
-}
-
 @media screen and (max-width: 768px) {
-    .main-img {
+    .main-img-holder {
         display: none;
     }
 
     .slideshow-img-holder {
         position: static;
-        bottom: 0;
-        left: 49px;
         z-index: 2;
+        grid-column: 1 / -1;
+        grid-row: 1;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .img-col-holder {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        aspect-ratio: 1 / 0.7;
+    }
+
+    .slide-transition {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .play-ball {
+        position: absolute;
+        top: 40%;
+        left: 10%;
     }
 }
 
@@ -170,6 +217,79 @@
     z-index: 2;
 }
 
+@media screen and (max-width: 768px) {
+    .faq-Img-holder {
+        display: none;
+    }
+}
+
+/* lists-component */
+
+.item-holder {
+    position: relative;
+}
+
+.list-line {
+    position: absolute;
+    top: 66px;
+    left: 32px;
+    bottom: -40px;
+    width: 4px;
+    /* border-left: 2px dashed #2563eb; */
+    background-image: linear-gradient(to bottom, #2563eb 50%, transparent 40%);
+    background-size: 4px 5px; /* Width and repeat height interval */
+    background-repeat: repeat-y;
+    z-index: 1;
+}
+
+.icon-circle {
+    position: relative;
+    z-index: 2;
+    width: 66px;
+    height: 66px;
+    background-color: #2563eb;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.icon-size {
+    display: inline-block;
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out, color 0.5s ease;
+}
+
+.icon-circle:hover {
+    background-color: #c46c56;
+}
+
+.icon-circle:hover .icon-size {
+    transform: perspective(400px) rotateY(-180deg);
+}
+
+.list-body h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.list-body p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.mainImg-holder {
+    position: relative;
+}
+
+.mainImg {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .mainImg-holder {
+        display: none;
+    }
+}
+
 .star-faq1 {
     position: absolute;
     z-index: 1;
@@ -181,8 +301,8 @@
 .star-faq2 {
     position: absolute;
     z-index: 1;
-    top: 0;
-    right: 30px;
+    top: -10px;
+    right: 24px;
     color: #3A65F2;
 }
 
@@ -205,18 +325,16 @@
 .star-faq5 {
     position: absolute;
     z-index: 1;
-    bottom: 10px;
-    right: 60px;
+    bottom: -10px;
+    right: 10px;
     color: #3A65F2;
 }
 
-@media screen and (max-width: 768px) {
-    .faq-Img-holder {
-        display: none;
-    }
-}
-
 /* Productgrid component */
+
+.product-grid {
+    background-color: rgba(164, 71, 48, 1);
+}
 
 .product-card {
     position: relative;
@@ -224,14 +342,65 @@
 
 .product-info {
     position: absolute;
-    top: 50%;
+    top: 40%;
+    opacity: 0;
+    /* transition: opacity 0.5s ease-in-out, opacity 0.5s ease; */
+}
+
+.product-info h6 {
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-butt {
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.product-overlay-1 {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0px 26px;
+    border-radius: 10px;
+}
+
+.product-overlay-2 {
+    position: absolute;
+    inset: 0;     
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0px 26px;
+    border-radius: 10px;
+    opacity: 0;
+    /* transition: opacity 0.5s ease-in-out, opacity 0.5s ease; */
+}
+
+.product-card:hover .product-info {
+    opacity: 1;
+}
+
+.product-card:hover .product-overlay-2 {
+    opacity: 1;
+}
+
+.product-card:hover .product-overlay-1 {
+    opacity: 0;
 }
 
 @media screen and (max-width: 768px) {
+    .product-overlay-1 {
+        margin: 0px 18px;
+    }
 
+    .product-overlay-2 {
+        margin: 0px 18px;
+    }
 }
 
 /* button-colors  */
+
 .butBrownClass {
     background-color: #A44730 !important;
     border: 1px solid #A44730 !important;

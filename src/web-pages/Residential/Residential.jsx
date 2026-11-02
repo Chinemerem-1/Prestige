@@ -34,10 +34,14 @@ const Residential = () => {
           compHeader="RESIDENTIAL CLEANING"
           paragraphOne="Your home is your sanctuary  and we’re here to help keep it that way. Our Residential Cleaning Service is designed to give you peace of mind, a healthier environment, and more time to enjoy the things you love."
           paragraphTwo="Whether you need a one-time deep clean or regular upkeep, our trained professionals will clean every corner with care and attention to detail. We use safe, eco-friendly products and modern tools to ensure your space is sparkling, fresh, and truly clean."
-          listOne="Kitchen and bathroom sanitation"
-          listTwo="Dusting and surface wiping"
-          listThree="Floor vacuuming and mopping"
-          listFour="Trash removal"
+          classCheck1="icon1 flex-shrink-0"
+          listText1="Kitchen and bathroom sanitation"
+          classCheck2="icon2 flex-shrink-0"
+          listText2="Dusting and surface wiping"
+          classCheck3="icon3 flex-shrink-0"
+          listText3="Floor vacuuming and mopping"
+          classCheck4="icon4 flex-shrink-0"
+          listText4="Trash removal"
           buttonText="Book Now"
         />
         <Benefits

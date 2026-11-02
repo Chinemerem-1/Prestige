@@ -1,13 +1,14 @@
 import { Container, Row, Col } from "react-bootstrap"
-import Images from "../../Components/Images"
-import img from "../../assets/section3.svg"
-import imgS from "../../assets/stars.png"
-import imgP from "../../assets/section31.svg"
-import imgM from "../../assets/section33.svg"
+import Images from "./Images"
+import img from "../assets/section3.svg"
+import imgS from "../assets/stars.png"
+import imgP from "../assets/section31.svg"
+import imgM from "../assets/section33.svg"
 import { FaHandsPraying } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa6";
+import { WiStars } from "react-icons/wi";
 
-const Aboutsection3 = () => {
+const ChooseUs = () => {
 
     const headerStyle = {
         fontFamily: "Montserrat",
@@ -81,6 +82,11 @@ const Aboutsection3 = () => {
 
                 <Col md={6} className="mainImg-holder">
                     <Images src={img} className="d-block ms-auto mainImg"/>
+                    {/* <WiStars size={40} className="star-faq1" style={{color: "#3a65f2"}}/> */}
+                    <WiStars size={40} className="star-faq2" style={{color: "#3a65f2"}}/>
+                    <WiStars size={40} className="star-faq3" style={{color: "#3a65f2"}}/>
+                    {/* <WiStars size={40} className="star-faq4" style={{color: "#3a65f2"}}/> */}
+                    <WiStars size={40} className="star-faq5" style={{color: "#3a65f2"}}/>
                 </Col>
             </Row>
         </Container>
@@ -89,4 +95,4 @@ const Aboutsection3 = () => {
   )
 }
 
-export default Aboutsection3
+export default ChooseUs

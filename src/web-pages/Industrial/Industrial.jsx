@@ -31,13 +31,17 @@ const Industrial = () => {
           slide1={slide1}
           slide2={slide2}
           slide3={slide3}
-          compHeader="RESIDENTIAL CLEANING"
+          compHeader="INDUSTRIAL CLEANING"
           paragraphOne="Enjoy a clean and comfortable home without the stress. Our domestic cleaning service is designed to keep your living space spotless, fresh, and inviting. "
           paragraphTwo="Whether you need a one-time deep clean or regular weekly maintenance, we tailor our service to suit your schedule and lifestyle"
-          listOne="Kitchen and bathroom sanitation"
-          listTwo="Dusting and surface wiping"
-          listThree="Floor vacuuming and mopping"
-          listFour="Trash removal"
+          classCheck1="icon1 flex-shrink-0"
+          listText1="Dusting all surfaces and furniture"
+          classCheck2="icon2 flex-shrink-0"
+          listText2="Vacuuming and mopping floors"
+          classCheck3="icon3 flex-shrink-0"
+          listText3="Kitchen cleaning (countertops, sinks, appliances)"
+          classCheck4="icon4 flex-shrink-0"
+          listText4="Trash removal and general tidying"
           buttonText="Book Now"
         />
         <Benefits

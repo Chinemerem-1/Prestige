@@ -70,13 +70,13 @@ const Homesection5 = () => {
                 </Col>
             </Row>
 
-            <Row className=" justify-content-between px-md-5 pt-md-5 g-md-5 process-holder">
+            <Row className=" justify-content-between px-md-5 pt-md-5 g-md-5 gy-4 process-holder">
                 
                 {processArray.map((processes) => {
                     return (
                         <Col md={4} className="" key={processes.number}>
                             <div className="process-card ">
-                                <div className="image-wrapper ">
+                                <div className="image-wrapper">
                                     {processes.image}
                                     <span className="process-number">
                                         {processes.number}
@@ -91,7 +91,7 @@ const Homesection5 = () => {
                 )})} 
             </Row>
 
-            <div className="text-center mt-5">
+            <div className="text-center mt-4">
                 <ButtonComp address="/Contact" buttonClass="butBrownClass" buttonText="Book Our Cleaning"/>
             </div>
 

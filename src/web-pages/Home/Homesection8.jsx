@@ -53,11 +53,11 @@ const Homesection8 = () => {
         };
 
   return (
-    <Container fluid className="px-md-5 py-5">
+    <Container fluid className="px-md-5 py-5" id="home-faq">
         
         <Row className="g-0 px-md-5 justify-content-between">
             <Col md={7} className="faq-holder d-flex flex-column gap-3">
-                <div className="d-flex align-items-center gap-0 mb-4">
+                <div className="d-flex align-items-center gap-2 mb-4">
                     <Images src={imgC}/>
                     <p className="mb-0" style={accordionStyle}>FREQUENTLY ASKED QUESTIONS</p>
                 </div>

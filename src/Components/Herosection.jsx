@@ -22,7 +22,7 @@ const Herosection = ({img, headerText}) => {
         fontWeight: 600
     }
 
-  return (
+  return (  
     <>
         <Container fluid className="hero-comp ps-md-5 pe-md-0">
             <Row className="g-0 align-items-center row-holder">

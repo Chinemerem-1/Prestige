@@ -25,12 +25,12 @@ function App() {
           <Route path="/Blog" element={<Blogpage/>}/>
           <Route path="/Project" element={<Project/>}/>
           <Route path="/Contact" element={<Contact/>}/>
-          <Route path="/sec1" element={<Residential/>}/>
-          <Route path="/sec2" element={<Janitorial/>}/>
-          <Route path="/sec3" element={<Material/>}/>
-          <Route path="/sec4" element={<Postconstruction/>}/>
-          <Route path="/sec5" element={<Fumigationpage/>}/>
-          <Route path="/sec6" element={<Industrial/>}/>
+          <Route path="/Residential" element={<Residential/>}/>
+          <Route path="/Janitorial" element={<Janitorial/>}/>
+          <Route path="/Material" element={<Material/>}/>
+          <Route path="/Post+Construction" element={<Postconstruction/>}/>
+          <Route path="/Fumigation" element={<Fumigationpage/>}/>
+          <Route path="/Industrial" element={<Industrial/>}/>
           <Route path="/Login" element={<Login/>}/>
         </Routes>
       </Router>

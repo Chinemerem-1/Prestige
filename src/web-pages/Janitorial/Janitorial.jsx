@@ -34,10 +34,14 @@ const Janitorial = () => {
           compHeader="JANITORIAL CLEANING"
           paragraphOne=" At Prestige hygiene, we provide routine cleaning solutions tailored to your business needs — whether it’s a small office, large facility, school, or commercial space. Keep your workplace spotless and professional with our dependable janitorial services."
           paragraphTwo="Our janitorial team is trained, vetted, and equipped with eco-friendly cleaning supplies to ensure a clean, healthy environment every day. Services can be scheduled daily, weekly, or monthly, and include:"
-          listOne="Trash removal and recycling"
-          listTwo="Restroom cleaning and sanitization"
-          listThree="Floor vacuuming and mopping"
-          listFour="Breakroom and kitchen cleaning"
+          classCheck1="icon1 flex-shrink-0"
+          listText1="Trash removal and recycling"
+          classCheck2="icon2 flex-shrink-0"
+          listText2="Restroom cleaning and sanitization"
+          classCheck3="icon3 flex-shrink-0"
+          listText3="Floor vacuuming and mopping"
+          classCheck4="icon4 flex-shrink-0"
+          listText4="Breakroom and kitchen cleaning"
           buttonText="Book Now"
         />
         <Benefits

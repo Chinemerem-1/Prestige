@@ -25,7 +25,7 @@ const Homesection9 = () => {
             month: "Jun",
             author: "Prestige",
             commentCount: "{10}",
-            image: <Images src={imgw1} className="img-fluid w-100"/>,
+            image: <Images src={imgw1} className="img-fluid w-100 blog-image"/>,
             title: "Let’s handle your dirt, while you enjoy the shine",
             description: "The cost of cleaning services is vary depending on factors such as the size of space.",
             linkText: "Read more>>"
@@ -38,7 +38,7 @@ const Homesection9 = () => {
             month: "Jun",
             author: "Prestige",
             commentCount: "{10}",
-            image: <Images src={imgw2} className="img-fluid w-100"/>,
+            image: <Images src={imgw2} className="img-fluid w-100 blog-image"/>,
             title: "Experience the brilliance of a spotless environment",
             description: "It's important to choose a cleaning service any provider that is licensed and bonded.",
             linkText: "Read more>>"
@@ -50,7 +50,7 @@ const Homesection9 = () => {
             month: "Jun",
             author: "Prestige",
             commentCount: "{10}",
-            image: <Images src={imgw1} className="img-fluid w-100"/>,
+            image: <Images src={imgw1} className="img-fluid w-100 blog-image"/>,
             title: "Leave the cleaning to us, and reclaim your time ",
             description: "Some cleaning companies offer eco-friendly or green cleaning services using a cleaning service any provider that is licensed.",
             linkText: "Read more>>"
@@ -63,7 +63,7 @@ const Homesection9 = () => {
 
             <Row className="px-md-5 g-0">
                 <Col md={6} className="">
-                    <div className="d-flex align-items-center gap-0 mb-3">
+                    <div className="d-flex align-items-center gap-2 mb-3">
                         <Images src={imgC}/>
                         <p className="mb-0" style={newsStyle}>BLOG AND NEWS</p>
                     </div>
@@ -71,7 +71,7 @@ const Homesection9 = () => {
                 </Col>
             </Row>
 
-            <Row className=" justify-content-between px-md-5 pt-md-5  process-holder">
+            <Row className=" justify-content-between px-md-5 pt-md-5  processblog-holder">
                 
                 {newsblogArray.map((items) => {
                     return (
@@ -79,8 +79,9 @@ const Homesection9 = () => {
                             <div className="blog-card h-100">
 
                                 <div className="blog-wrapper flex-shrink-0">
-                                    {items.image}
-                                    <div className="blog-number text-white ps-3 pt-1 pb-2 pe-3 text-center">
+                                        {items.image}
+                                    <div className="image-overlay"></div>
+                                    <div className="blog-number text-white ps-3 pt-1 pb-2 pe-3 text-center z-3">
                                         <span className="d-block date-num lh-1">{items.date}</span>
                                         <span className="d-block date-month">{items.month}</span>
                                     </div>

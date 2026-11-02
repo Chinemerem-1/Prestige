@@ -34,9 +34,13 @@ const accordionStyle = {
             compHeader="PEST CONTROL CLEANING"
             paragraphOne="Unwanted pests can disrupt the comfort and hygiene of your home or business. At Prestige hygiene, we offer safe, effective, and environmentally-friendly pest control solutions as part of our comprehensive cleaning services."
             paragraphTwo="Our trained professionals use targeted treatments to eliminate common pests like ants, cockroaches, rodents, bed bugs, and more—while ensuring your space remains clean, safe, and livable. Whether it’s a one-time treatment or part of a routine maintenance plan, we tailor our pest control services to your needs."
-            listOne="Safe for children and pets"
-            listTwo="Fast, discreet, and effective"
-            listThree="Preventive and reactive treatments"
+            classCheck1="icon1 flex-shrink-0"
+            listText1="Safe for children and pets"
+            classCheck2="icon2 flex-shrink-0"
+            listText2="Fast, discreet, and effective"
+            classCheck3="icon3 flex-shrink-0"
+            listText3="Preventive and reactive treatments"
+            classCheck4="icon4fum flex-shrink-0"
             buttonText="Book Now"
         />
         <Benefits

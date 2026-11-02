@@ -37,12 +37,12 @@ function NavHeader() {
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)} 
             onToggle={(val) => setIsOpen(val)}  title="Service" id="basic-nav-dropdown">
-              <NavDropdown.Item style={navC} href="/sec1">Residential Cleaning</NavDropdown.Item>
-              <NavDropdown.Item style={navC} href="/sec2">Janitorial Cleaning</NavDropdown.Item>
-              <NavDropdown.Item style={navC} href="/sec3">Supply Of Materials</NavDropdown.Item>
-              <NavDropdown.Item style={navC} href="/sec4">Post Construction Cleaning</NavDropdown.Item>
-              <NavDropdown.Item style={navC} href="/sec5">Fumigation/Pest Control</NavDropdown.Item>
-              <NavDropdown.Item style={navC} href="/sec6">Industrial Cleaning</NavDropdown.Item>
+              <NavDropdown.Item style={navC} href="/Residential">Residential Cleaning</NavDropdown.Item>
+              <NavDropdown.Item style={navC} href="/Janitorial">Janitorial Cleaning</NavDropdown.Item>
+              <NavDropdown.Item style={navC} href="/Material">Supply Of Materials</NavDropdown.Item>
+              <NavDropdown.Item style={navC} href="/Post+Construction">Post Construction Cleaning</NavDropdown.Item>
+              <NavDropdown.Item style={navC} href="/Fumigation">Fumigation/Pest Control</NavDropdown.Item>
+              <NavDropdown.Item style={navC} href="/Industrial">Industrial Cleaning</NavDropdown.Item>
             </NavDropdown>
 
             <Nav.Link style={navC} className='nav-link' href="/Blog">Blog</Nav.Link>

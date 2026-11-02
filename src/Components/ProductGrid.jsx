@@ -16,37 +16,37 @@ const ProductGrid = () => {
             id: 1,
             pics: <Images src={pro1} className="img-fluid"/>,
             title: "Pressure Cleaning Machine",
-            butt: <ButtonComp/>
+            butt: <ButtonComp buttonText="Order Now" buttonClass="butBrownClass material-butt"/>
         },
         {
             id: 2,
             pics: <Images src={pro2} className="img-fluid"/>,
             title: "Disinfectant",
-            butt: <ButtonComp/>
+            butt: <ButtonComp buttonText="Order Now" buttonClass="butBrownClass material-butt"/>
         },
         {
             id: 3,
             pics: <Images src={pro3} className="img-fluid"/>,
             title: "Long Brooms",
-            butt: <ButtonComp/>
+            butt: <ButtonComp buttonText="Order Now" buttonClass="butBrownClass material-butt"/>
         },
         {
             id: 4,
-            pics: <Images src={pro4} className="img-fluid"/>,
+            pics: <Images src={pro5} className="img-fluid"/>,             
             title: "Dust Pans",
-            butt: <ButtonComp/>
+            butt: <ButtonComp buttonText="Order Now" buttonClass="butBrownClass material-butt"/>
         },
         {
             id: 5,
-            pics: <Images src={pro5} className="img-fluid"/>,
+            pics: <Images src={pro6} className="img-fluid"/>, 
             title: "Handheld Pickers",
-            butt: <ButtonComp/>
+            butt: <ButtonComp buttonText="Order Now" buttonClass="butBrownClass material-butt"/>
         },
         {
             id: 6,
-            pics: <Images src={pro6} className="img-fluid"/>,
+            pics: <Images src={pro4} className="img-fluid"/>,
             title: "Speed Blowers",
-            butt: <ButtonComp/>
+            butt: <ButtonComp buttonText="Order Now" buttonClass="butBrownClass material-butt"/>
         },
     ]
 
@@ -56,13 +56,13 @@ const ProductGrid = () => {
         }
 
         const headLabel = {
-            fontSize: 40,
+            fontSize: 30,
             fontWeight: 600
         }
   return (
     <>
-     <Container fluid className="px-md-5">
-        <div className="px-md-5">
+     <Container fluid className="px-md-5 py-5 my-5 product-grid">
+        <div className="px-md-5 text-white">
             <div className="d-flex align-items-center gap-2 mb-3">
                 <Images src={imgC}/>
                 <p className="mb-0" style={headStyle}>EXPLORE OUR PRODUCTS</p>
@@ -74,13 +74,15 @@ const ProductGrid = () => {
         <Row className= "px-md-5 gx-md-0 gy-4 py-4">
             {productGridArray.map((products) => {
                 return (
-                    <Col md={4} className="product-card d-flex justify-content-center">
+                    <Col md={4} className="product-card d-flex justify-content-center align-items-center">
                         
-                            <div className="product-img">
+                            <div className="product-img z-1">
                                 {products.pics}
                             </div>
-
-                            <div className="product-info">
+                            <span className="product-overlay-1 z-2"></span>
+                            
+                            <span className="product-overlay-2 z-2"></span>
+                            <div className="product-info text-center z-3">
                                 <h6>{products.title}</h6>
                                 <span>{products.butt}</span>
                             </div>

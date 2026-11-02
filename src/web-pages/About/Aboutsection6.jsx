@@ -4,6 +4,10 @@ import imgC from "../../assets/stars.png"
 import imgw1 from "../../assets/manager.png"
 import imgw2 from "../../assets/secretary.png"
 import imgw3 from "../../assets/supervisor.png"
+import { FaFacebookF } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Aboutsection6 = () => {
 
@@ -59,14 +63,38 @@ const Aboutsection6 = () => {
                 </Col>
             </Row>
 
-            <Row className="justify-content-between px-md-5 pt-5 gx-5 gy-md-0 gy-3 process-holder">
+            <Row className="justify-content-between px-md-5 pt-5 gx-md-5 gy-md-0 gy-3">
                 
                 {processArray.map((member) => {
                     return (
                         <Col md={4} className="" key={member.number}>
                             <div className="member-hold">
-                                <div className="member-wrapper">
+                                <div className="member-wrapper z-2">
                                     {member.image}
+                                </div>
+
+                                <div className="member-card2 w-50 px-3 bg-white py-4">
+                                    <h6 className="mt-2">{member.title}</h6>
+                                    <p>{member.description}</p>
+
+                                    <div className="d-flex gap-1" style={{}}>
+                                        <div className="" role="button" style={{backgroundColor: '#3A65F2', padding: '0px 5px', height: "25px", borderRadius: "5px"}}>
+                                            <FaFacebookF style={{fontSize: "15px", color: "white"}}/>
+                                        </div>
+                                        
+                                        <div className="" role="button" style={{backgroundColor: '#3A65F2', padding: '0px 5px', height: "25px", borderRadius: "5px"}}>
+                                            <FaLinkedinIn style={{fontSize: "15px", color: "white"}}/>
+                                        </div>
+                                        
+                                        <div className="" role="button" style={{backgroundColor: '#3A65F2', padding: '0px 5px', height: "25px", borderRadius: "5px"}}>
+                                            <FaWhatsapp style={{fontSize: "15px", color: "white"}}/>
+                                        </div>
+
+                                        <div className="" role="button" style={{backgroundColor: '#3A65F2', padding: '0px 5px', height: "25px", borderRadius: "5px"}}>
+                                            <FaXTwitter style={{fontSize: "15px", color: "white"}}/>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
 
                                 <div className="member-card w-50 px-3 bg-white py-3">

@@ -50,10 +50,10 @@ const Homesection2 = () => {
                 <h2 style={styleh2} className="text-center text-white ">Our Range Of Specified Cleaning Service</h2>
             </div>
 
-            <Row className="justify-content-around g-0 gap-5 mt-5">
+            <Row className="justify-content-around mt-5 px-md-5 gy-md-0 gy-3">
                 {sectionArray.map((sectionA) => {
                     return (
-                        <Col md={3} className="">
+                        <Col md={4} className="">
                             {sectionA.item}
                         </Col> 
                     )

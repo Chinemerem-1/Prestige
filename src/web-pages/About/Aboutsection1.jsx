@@ -105,19 +105,19 @@ Whether you need a one-time deep clean or regular upkeep, our trained profession
 
             <section className="d-flex flex-column gap-3">
               <div className="d-flex gap-2 align-items-center">
-                <IoCheckbox style={{color: "#3A65F2", fontSize: "25px"}}/>
+                <IoCheckbox style={{color: "#3A65F2", fontSize: "25px"}} className="flex-shrink-0"/>
                 <p className="mb-0" style={checkT1}>Loaded with professional and honest cleaners</p>
               </div>
               <div className="d-flex gap-2 align-items-center">
-                <IoCheckbox style={{color: "#3A65F2", fontSize: "25px"}}/>
+                <IoCheckbox style={{color: "#3A65F2", fontSize: "25px"}} className="flex-shrink-0"/>
                 <p className="mb-0" style={checkT2}>Provide the finest clean service</p>
               </div>
               <div className="d-flex gap-2 align-items-center">
-                <IoCheckbox style={{color: "#3A65F2", fontSize: "25px"}}/>
+                <IoCheckbox style={{color: "#3A65F2", fontSize: "25px"}} className="flex-shrink-0"/>
                 <p className="mb-0" style={checkT3}>100% satisfaction cleaning service</p>
               </div>
               <div className="d-flex gap-2 align-items-center">
-                <IoCheckbox style={{color: "#3A65F2", fontSize: "25px"}}/>
+                <IoCheckbox style={{color: "#3A65F2", fontSize: "25px"}} className="flex-shrink-0"/>
                 <p className="mb-0" style={checkT4}>We are bonded and insured</p>
               </div>
             </section>

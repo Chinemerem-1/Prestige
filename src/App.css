@@ -38,6 +38,12 @@
         flex-direction: column;
         gap: 10px;
     }
+
+    .home-star {
+        position: absolute;
+        left: -20px;
+        top: -30px;
+    }
 }
 
 /* section 1 */
@@ -140,51 +146,20 @@
     border-radius: 999px;
 }
 
-.item-holder {
-    position: relative;
+.card-body .card-line {
+    transform: transform 0.4s ease;
 }
 
-.list-line {
-    position: absolute;
-    top: 66px;
-    left: 32px;
-    bottom: -40px;
-    width: 4px;
-    /* border-left: 2px dashed #2563eb; */
-    background-image: linear-gradient(to bottom, #2563eb 50%, transparent 40%);
-    background-size: 4px 5px; /* Width and repeat height interval */
-    background-repeat: repeat-y;
-    z-index: 1;
+.card-holder:hover .card-body {
+    transform: translateY(-25px);
 }
 
-.icon-circle {
-    position: relative;
-    z-index: 2;
-    width: 66px;
-    height: 66px;
-    background-color: #2563eb;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+.card-holder:hover .card-line {
+    transform: translateY(-25px);
 }
 
-.list-body h3 {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.list-body p {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.mainImg {
-    overflow: hidden;
-}
-
-@media screen and (max-width: 768px) {
-    .mainImg-holder {
-        display: none;
-    }
+.card-holder:hover .card-line {
+    background: #cd8573;
 }
 
 /* before-after-section */
@@ -271,7 +246,19 @@
     border: 5px #D8775E solid;
     border-radius: 20px;
     padding: 15px 25px;
+    transition: transform 0.5s ease-in-out;
+    background: white;
 }
+
+.image-wrapper:hover {
+    border: 5px #3A65F2 solid;
+}
+
+.image-wrapper:hover .process-number {
+    background-color: black;
+    top: 70px;
+}
+
 
 .process-number {
     position: absolute;
@@ -301,11 +288,30 @@
     text-align: center;
 }
 
+.process-holder {
+    position: relative;
+}
+
+.process-holder::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 46%;
+    height: 3.5px;
+    background: #111;
+}
+
+
 @media screen and (max-width: 768px) {
     .process-number {
 
         top: 10px;
         left: 15px;
+    }
+
+    .process-holder::before {
+        display: none;
     }
 }
 
@@ -364,7 +370,7 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #fff;
-
+    box-shadow:0px 5px 7px 0px rgba(0, 0, 0, 0.25);
 }
 
 .test-card-line {
@@ -441,9 +447,28 @@
 
 .blog-wrapper {
     position: relative;
+    width: 100%;
+    cursor: pointer;
     /* border: 5px #D8775E solid; */
     /* border-radius: 20px; */
     /* padding: 15px 25px; */
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;                    
+  background-color: rgba(245, 129, 100, 0.5); 
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; 
+  pointer-events: none; 
+  z-index: 2;
+}
+
+/* 3. Trigger the overlay on hover */
+.blog-wrapper:hover .image-overlay {
+  opacity: 1;       
 }
 
 .blog-number {
@@ -530,6 +555,16 @@
     font-weight: 500;
 }
 
+.links-footer {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.5s ease-in-out;
+}
+
+.links-footer:hover {
+    color: #3A65F2;
+}
+
 .fut-line {
     background-color: #3A65F2;
     height: 1.5px;
@@ -596,6 +631,12 @@
     /* background-repeat: no-repeat; */
 }
 
+.member-hold {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
 .member-wrapper {
     /* position: relative; */
     border: 5px #3A65F2 solid;
@@ -607,6 +648,33 @@
 .member-card {
     background-color: white;
     box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.05);
+    margin-top: -15px;
+    z-index: 1;
+    transition: opacity 0.1s ease-out
+}
+
+.member-card2 {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.05);
+    margin-top: -15px;
+    z-index: 3;
+    bottom: 30px;
+    left: 30px;
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}
+
+.member-hold:hover .member-card2 {
+    opacity: 1;
+}
+
+.member-hold:hover .member-card {
+    opacity: 0;
+}
+
+.member-hold:hover .member-wrapper {
+    border-color: #D8775E;
 }
 
 .member-card h6 {
@@ -681,6 +749,10 @@
     background-color: #A44730 !important;
 }
 
+.icon4fum {
+    display: none;
+}
+
 /* Industrial page */
 
 .ind-bg-holder {
@@ -695,4 +767,57 @@
     background-color: #A44730 !important;
 }
 
+/* Blog page  */
 
+@media screen and (max-width:768px) {
+    .blog-hero-section {
+        display: none;
+    }
+}
+
+.page-btn {
+    display: flex;
+    width: 27px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #A44730; 
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease
+}
+
+.page-btn.active {
+    background-color: #A44730;
+    color: white;
+}
+
+
+.arrow-line {
+    background-color: black;
+    height: 3.5px;
+    border: none;
+    opacity: 1;
+}
+
+.arrow-line {
+    background-color: black;
+    height: 3.5px;
+    border: none;
+    opacity: 1;
+}
+
+.text-container {
+    position: relative;
+}
+
+.starblog-header {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    color: #3A65F2;
+}

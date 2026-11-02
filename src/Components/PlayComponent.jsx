@@ -1,10 +1,10 @@
 import { FaPlay } from "react-icons/fa";
 
-const PlayComponent = () => {
+const PlayComponent = ({stylePlay, sizePlay}) => {
   return (
     <>
-        <div className="play-circle d-flex justify-content-center align-items-center flex-shrink-0" style={{color: "white"}}>
-            <FaPlay size={21} className="ms-1"/>
+        <div role="button" className="play-circle d-flex justify-content-center align-items-center flex-shrink-0" style={stylePlay}>
+            <FaPlay size={sizePlay} className="ms-1"/>
         </div>
     </> 
   )

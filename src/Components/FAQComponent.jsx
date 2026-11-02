@@ -4,9 +4,8 @@ import imgC from "../assets/stars.png"
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
-import { WiStars } from "react-icons/wi";
 
-const FAQComponent = ({faqHolder,faqstyle, faqimg,accordionStyle}) => {
+const FAQComponent = ({faqHolder,faqstyle, faqimg,accordionStyle, idName}) => {
 
         const faqArray = [
             {
@@ -48,7 +47,7 @@ const FAQComponent = ({faqHolder,faqstyle, faqimg,accordionStyle}) => {
         };
 
   return (
-    <Container fluid className={faqHolder}>
+    <Container fluid className={faqHolder} id={idName}>
         
         <Row className="g-0 ps-md-5 justify-content-between">
             <Col md={6} className="faqcomp-holder d-flex flex-column gap-3">
@@ -79,11 +78,6 @@ const FAQComponent = ({faqHolder,faqstyle, faqimg,accordionStyle}) => {
 
            <Col md={6} className="faq-Img-holder overflow-hidden">
                 <Images src={faqimg} className="d-block ms-auto faq-Img"/>
-                {/* <WiStars size={40} className="star-faq1" style={{color: starcolor}}/>
-                <WiStars size={40} className="star-faq2" style={{color: starcolor}}/>
-                <WiStars size={40} className="star-faq3" style={{color: starcolor}}/>
-                <WiStars size={40} className="star-faq4" style={{color: starcolor}}/>
-                <WiStars size={40} className="star-faq5" style={{color: starcolor}}/> */}
             </Col>
         </Row>
     </Container>

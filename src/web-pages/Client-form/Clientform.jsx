@@ -1,6 +1,14 @@
+import Footer from "../../Components/Footer"
+import Herosection from "../../Components/Herosection"
+import NavHeader from "../../Components/navHeader"
+
 const Clientform = () => {
   return (
-    <div>Clientform</div>
+    <>
+      <NavHeader/>
+      <Herosection/>
+      <Footer/>
+    </>
   )
 }
 
