@@ -13,6 +13,9 @@ import Postconstruction from './web-pages/Post-construction/Postconstruction'
 import Fumigationpage from './web-pages/Fumigation/Fumigationpage'
 import Industrial from './web-pages/Industrial/Industrial'
 import Login from './web-pages/Login/Login'
+import Signup from './web-pages/Sign-up/Signup'
+import Staffform from './web-pages/Staff-form/Staffform'
+import Clientform from './web-pages/Client-form/Clientform'
 
 function App() {
 
@@ -32,6 +35,9 @@ function App() {
           <Route path="/Fumigation" element={<Fumigationpage/>}/>
           <Route path="/Industrial" element={<Industrial/>}/>
           <Route path="/Login" element={<Login/>}/>
+          <Route path="/Signup" element={<Signup/>}/>
+          <Route path="/Staff" element={<Staffform/>}/>
+          <Route path="/Client" element={<Clientform/>}/>
         </Routes>
       </Router>
     </>

@@ -769,9 +769,72 @@
 
 /* Blog page  */
 
+/* blogherocard section  */
+
+.hero-card {
+    background-color: white;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.25);
+    max-width: 423px;
+}
+
+.blog-hero-container {
+  position: relative;
+  height: 84vh;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 8%;
+}
+
+.blog-hero-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; /* Prevents hidden slides from blocking clicks */
+}
+
+.blog-hero-section.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card-Col {
+  animation: slowFadeIn 1.2s ease-in-out forwards;
+}
+
+@keyframes slowFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media screen and (max-width:768px) {
+    .blog-hero-container {
+        position: relative;
+        height: 80vh;
+        width: 100%;
+        margin-bottom: 0%;
+    }
+
     .blog-hero-section {
-        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -820,4 +883,282 @@
     top: -30px;
     left: -30px;
     color: #3A65F2;
+}
+
+/* Login page  */
+
+.login-left-holder {
+    position: relative;
+}
+
+.img-background {
+    background: linear-gradient(to bottom, #fff 65%, #A44730 65%);
+    border-radius: 10px;
+}
+
+.logo-img {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+
+/* login page form styling */
+
+.L1,.L2 {
+    outline: none !important;
+    background-color: transparent !important;
+    border: 1px solid #A44730 !important;
+    box-shadow: none !important;
+    padding: 10px;
+    height: 45px;
+    border-radius: 10px !important;
+}
+
+.L1:focus, .L2:focus {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: black !important;
+}
+
+/* Change color when checked */
+.login-form-check .form-check-input:checked {
+    background-color: #A44730; 
+    border-color: #A44730;
+}
+
+/* Change focus ring color (optional) */
+.login-form-check .form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+    border-color: #cd8573;
+}
+
+.login-form-check .form-check-input {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.links-login {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.5s ease-in-out;
+}
+
+.links-login:hover {
+    color: #3A65F2;
+}
+
+.butBrownClass-Login {
+    background-color: white !important;
+    border: 1px solid #A44730 !important;
+    color: black !important;
+}
+
+.sign-line {
+    height: 1.5px;
+    background-color: #111;
+    opacity: 1;
+    border: none;
+}
+
+.line-section {
+    position: relative;
+}
+
+.or-text {
+    position: absolute;
+    top: -8.5px;
+    left: 47%;
+    background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .login-left-holder {
+        display: none;
+    }
+}
+
+/* staff and Client form styling  */
+
+/* switch component  */
+
+@media screen and (max-width: 768px) {
+    .button-holder {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.left-icon {
+    background-color: #A44730;
+    color: white;
+    padding: 3px;
+}
+
+.right-icon {
+    background-color: white;
+    color: #FF4424;
+    padding: 3px;
+}
+
+.left-button {
+    background-color: white;
+    border: 1px solid #A44730;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 18px 10px;
+    width: 226px;
+    color: #A44730;
+}
+
+.right-button {
+    background-color: #A44730;
+    border: 1px solid #A44730;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 18px 10px;
+    width: 226px;
+    color: white;
+}
+
+.switch-line {
+    height: 7px;
+    border: none;
+    background-color: #2563eb;
+    opacity: 1;
+}
+
+.form-cont {
+    position: relative;
+}
+
+.form-star1 {
+    position: absolute;
+    top: 3%;
+    left: -5px;
+}
+
+.form-star2 {
+    position: absolute;
+    top: 69%;
+    left: -5px;
+}
+
+.form-star3 {
+    position: absolute;
+    bottom: -132%;
+    left: -5px;
+}
+
+@media screen and (max-width:768px) {
+    .form-star1, .form-star2, .form-star3 {
+        display: none;
+    }
+}
+
+.s1 {
+    outline: none !important;
+    background-color: transparent !important;
+    border: 1px solid #A44730 !important;
+    box-shadow: none !important;
+    padding: 10px;
+    height: 45px;
+    border-radius: 10px !important;
+}
+
+.s1:focus {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: black !important;
+}
+
+.text-area {
+    height: auto;
+}
+
+.file-box {
+    border: 1px dashed #B42323;
+    border-radius: 10px;
+    position: relative;
+}
+
+.input-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.radio-style {
+    font-size: 16px;
+    font-weight: 400;    
+}
+
+/* Change color when checked */
+.radio-form .form-check-input:checked {
+    background-color: #A44730; 
+    border-color: #A44730;
+}
+
+/* Change focus ring color (optional) */
+.radio-form .form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.radio-form .form-check-input {
+    border-color: #A44730;
+    height: 30px;
+    width: 30px;
+}
+
+.dropdown-wrapper {
+    position: relative;
+}
+
+.custom-input-with-icon {
+    background-image: none !important; 
+}
+
+.arrow-drop-container {
+    position: absolute;
+    top: 55%;
+    right: 14px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Allows clicks to pass through to the dropdown */
+}
+
+.calendar-wrapper {
+    position: relative;
+}
+
+.custom-input-with-calendar::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.calendar-icon-container {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+.Client-butt {
+    /* padding: 10px 150px !important; */
+    width: 342px;
+}
+
+@media screen and (max-width:768px) {
+    .Client-butt {
+       width: auto;
+    }
 }

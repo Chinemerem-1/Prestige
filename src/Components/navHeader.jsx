@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import ButtonComp from "../Components/ButtonComp"
 import Images from './Images';
-import imag from "../assets/WhatsApp_Image_2025-06-05_at_12.51.10_e39f890f-removebg-preview 1.png"
+import imag from "../assets/logo.png"
 import { useState } from 'react';
 
 function NavHeader() {

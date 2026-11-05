@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap"
 import Images from "./Images"
-import fotImag from "../assets/WhatsApp_Image_2025-06-05_at_12.51.10_e39f890f-removebg-preview 1.png"
+import fotImag from "../assets/logo.png"
 import { FaFacebookF } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
