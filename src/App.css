@@ -259,7 +259,6 @@
     top: 70px;
 }
 
-
 .process-number {
     position: absolute;
     background-color: #3A65F2;
@@ -288,29 +287,42 @@
     text-align: center;
 }
 
-.process-holder {
-    position: relative;
+.process-card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0;
 }
 
-.process-holder::before {
-    content: "";
+.first-arrow {
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 46%;
-    height: 3.5px;
-    background: #111;
+    top: 44%;
+    right: -4%;
 }
 
+.second-arrow {
+    position: absolute;
+    top: 44%;
+    left: -7%;
+}
+
+.process-cards {
+    display: flex;
+}
+
+/* 1. Make the row container the positioning anchor */
+.process-holder {
+  position: relative;
+}
 
 @media screen and (max-width: 768px) {
     .process-number {
-
         top: 10px;
         left: 15px;
     }
 
-    .process-holder::before {
+    .arrow-card, .icon-one {
         display: none;
     }
 }
@@ -343,10 +355,15 @@
     border: 1px solid #3A65F2 !important;
     box-shadow: none !important;
     padding: 10px;
+    height: 41px;
     
     /* color: white !important; */
     /* border-bottom: 1px solid white !important; */
     border-radius: 10px !important;
+}
+
+.f7 {
+    height: auto;
 }
 
 .f1:focus, .f2:focus, .f3:focus, .f4:focus, .f5:focus, .f6:focus, .f7:focus {
@@ -860,7 +877,7 @@
 }
 
 
-.arrow-line {
+/* .arrow-line {
     background-color: black;
     height: 3.5px;
     border: none;
@@ -872,7 +889,7 @@
     height: 3.5px;
     border: none;
     opacity: 1;
-}
+} */
 
 .text-container {
     position: relative;
@@ -1162,3 +1179,116 @@
        width: auto;
     }
 }
+
+/* Contact section two */
+
+.contact-bg-holder {
+    background: linear-gradient(to bottom, #ffff 45%, #F5F5F5 45%);
+    /* height: 70%; */
+}
+
+/* contact form styling */
+
+.c1 {
+    outline: none !important;
+    background-color: #F5F5F5 !important;
+    box-shadow: none !important;
+    padding: 10px;
+    height: 45px;   
+    /* color: white !important; */
+    /* border-bottom: 1px solid white !important; */
+    border-radius: 5px !important;
+}
+
+.c2 {
+    height: auto;
+}
+
+.c1:focus {
+    background-color: transparent !important;
+    /* border-bottom: 1px solid white !important; */
+    box-shadow: none !important;
+    color: black !important;
+}
+
+.contact-form-wrapper {
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.comment-line {
+    background-color: black;
+    height: 1.5px;
+    border: none;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-image {
+        display: none;
+    }
+
+    .review-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rating-holder {
+        width: 100% !important;
+    }
+
+    .starrev-header {
+        position: absolute;
+        top: -60%;
+        left: 2% !important;
+    }
+
+    .starrev2-header {
+        position: absolute;
+        top: -60%;
+        right: 2% !important;
+    }
+}
+
+.bg-progress-color {
+    background-color: #A44730 !important;
+}
+
+.review-progress {
+    background-color: #F0ACAC !important;
+}
+
+.review-progress .progress-bar {
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+
+.cust-rev {
+    background-color: #D9D9D9 !important;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.05) !important;
+}
+
+.rating-holder {
+    width: 93%;
+}
+
+.review-container {
+    position: relative;
+}
+
+.starrev-header {
+    position: absolute;
+    top: -60%;
+    left: 36%;
+    color: #3A65F2;
+}
+
+.starrev2-header {
+    position: absolute;
+    top: -60%;
+    right: 36%;
+    color: #3A65F2;
+}
+

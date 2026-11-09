@@ -412,6 +412,18 @@
     color: black !important;
 }
 
+.butWhiteClass {
+    background-color: white !important;
+    border: 1px solid #A44730 !important;
+    color: black !important;
+}
+
+.butWhiteClass:hover {
+    background-color: #A44730 !important;
+    border: 1px solid #A44730 !important;
+    color: white !important;
+}
+
 .butBlueClass {
     background-color: #3A65F2 !important;
     border: 1px solid #3A65F2 !important;
@@ -437,4 +449,126 @@
     border: 1px solid #b95c44;
     background-color: white;
     color: #3A65F2 !important;
+}
+
+/* Project page component */
+
+.img1 {
+    width: 100%;
+    height: 100%;;
+}
+
+.comparison-button-proj {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 88px;
+    height: 88px;
+    box-sizing: border-box;
+    border: 10px solid white;
+    border-radius: 50%;
+    background-color: #D8775E;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    z-index: 2;
+}
+
+.arrow-button-proj {
+    padding: 0;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow-proj {
+    width: 19px;
+    height: 21px;
+}
+
+.project-category {
+    padding: 10px 15px !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.project-category.active-category {
+    background-color: white !important;
+    border: 1px solid #A44730 !important;
+    color: #b95c44 !important;
+}
+
+.project-category.active-category:hover {
+    color: black !important;
+}
+
+.lbl-black {
+    background-color: black !important;
+}
+
+.lbl-brown {
+    background-color: #A44730 !important;
+}
+
+/* contact information  */
+
+.icon-contact-hold {
+    transition: background-color 0.4s ease-in-out;
+}
+
+.contact-card-two:hover svg {
+    color: white !important;
+}
+
+.contact-card:hover .contact-line {
+    background-color: #2563eb;
+}
+
+.contact-card:hover .icon-contact-hold {
+    background-color: #A44730 !important;
+}
+
+.contact-card:hover .contact-line::before {
+    background-color: #2563eb;
+}
+
+.contact-card:hover .contact-line::after {
+    background-color: #2563eb;
+}
+
+.contact-line {
+    position: relative;
+    height: 1px;
+    background-color: #a5523d;
+    width: 100%;
+    /* margin: 20px 0; */
+    transition: background-color 0.4s ease-in-out;
+}
+
+.contact-line::before,
+.contact-line::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: #a5523d;
+  transform: translateY(-50%) rotate(45deg); /* Rotates a square 45 degrees to form a diamond */
+  transition: background-color 0.4s ease-in-out;
+}
+
+/* Position the left diamond */
+.contact-line::before {
+  left: 0;
+}
+
+/* Position the right diamond */
+.contact-line::after {
+  right: 0;
 }

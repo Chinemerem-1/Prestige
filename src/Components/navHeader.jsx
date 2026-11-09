@@ -20,7 +20,7 @@ function NavHeader() {
 
   return (
     <Navbar expand="lg" className="px-md-5 py-md-3">
-      <Container fluid className='px-md-0 mx-md-5 d-flex gap-md-5 '>
+      <Container fluid className='px-md-0 mx-md-5 d-flex gap-md-5'>
         <Navbar.Brand href="/" className=''>
             <Images src={imag}/>
         </Navbar.Brand>
@@ -47,8 +47,8 @@ function NavHeader() {
 
             <Nav.Link style={navC} className='nav-link' href="/Blog">Blog</Nav.Link>
             <Nav.Link style={navC} className='nav-link' href="/Project">Project</Nav.Link>
-            <Nav.Link style={navC} className='nav-link' href="/Contact">Contact</Nav.Link>
-            <ButtonComp address="/Login" buttonClass="butBrownClass" buttonText="Login"/>
+            <Nav.Link style={navC} className='nav-link me-md-5' href="/Contact">Contact</Nav.Link>
+            <ButtonComp address="/Login" buttonClass="butBrownClass ms-md-5" buttonText="Login"/>
           </Nav>
         </Navbar.Collapse>
       </Container>

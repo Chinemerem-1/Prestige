@@ -16,7 +16,7 @@ import { HashLink } from 'react-router-hash-link';
 const Footer = () => {
     return (
         <>
-            <Container fluid className="px-md-5 pt-5 pb-2 fut">
+            <Container fluid className="px-md-5 pt-5 pb-2 fut" style={{backgroundColor: "white"}}>
                 <Row className="px-md-5 py-3 gap-4 justify-content-between align-items-center">
                     <Col md={4}>
                         <Images src={fotImag}/>
@@ -51,27 +51,27 @@ const Footer = () => {
                             <Col md={4}  xs={6} className="d-flex flex-column gap-2">
                                 <h6 className="mb-0" style={{fontSize: "16px", fontWeight: "600"}}>SERVICES</h6>
                                 <div className="d-flex serv-holder align-items-center gap-1">
-                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>
                                     <p className="mb-0 "><Link to="/Industrial" className="links-footer">Industrial Cleaning</Link></p>
                                 </div> 
                                 <div className="d-flex serv-holder align-items-center gap-1">
-                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>
                                     <p className="mb-0"><Link to="/Fumigation" className="links-footer">Deep Cleaning</Link></p>
                                 </div>
                                 <div className="d-flex serv-holder align-items-center gap-1">
-                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>
                                     <p className="mb-0"><Link to="/Residential" className="links-footer">Residential Cleaning</Link></p>
                                 </div>
                                 <div className="d-flex serv-holder align-items-center gap-1">
-                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>
                                     <p className="mb-0"><Link to="/Janitorial" className="links-footer">Janitorial Cleaning</Link></p>
                                 </div>
                                 <div className="d-flex serv-holder align-items-center gap-1">
-                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>
                                     <p className="mb-0"><Link to="/Material" className="links-footer">Supply Materials</Link></p>
                                 </div>
                                 <div className="d-flex serv-holder align-items-center gap-1">
-                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>
                                     <p className="mb-0"><Link to="/Post+Construction" className="links-footer">Post Construction</Link></p>
                                 </div>
                             </Col>
@@ -79,27 +79,27 @@ const Footer = () => {
                             <Col md={3}  xs={6} className="d-flex flex-column gap-2">
                                 <h6 className="mb-0" style={{fontSize: "16px", fontWeight: "600"}}>OUR LINKS</h6>
                                 <div className="d-flex links-holder align-items-center gap-1">
-                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>
                                     <p className="mb-0"><Link to="/" className="links-footer">Home</Link></p>
                                 </div>
                                 <div className="d-flex links-holder align-items-center gap-1">
-                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>
                                     <p className="mb-0"><Link to="/About" className="links-footer">About</Link></p>
                                 </div>
                                 <div className="d-flex links-holder align-items-center gap-1">
-                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>
                                     <p className="mb-0"><Link to="/Contact" className="links-footer">Privacy/Policy</Link></p>
                                 </div>
                                 <div className="d-flex links-holder align-items-center gap-1">
-                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>
                                     <p className="mb-0"><Link to="/Blog" className="links-footer">Portfolio</Link></p>
                                 </div>
                                 <div className="d-flex links-holder align-items-center gap-1">
-                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>
                                     <p className="mb-0"><Link as={HashLink} smooth to="/#home-faq" className="links-footer">FAQ</Link></p>
                                 </div>
                                 <div className="d-flex links-holder align-items-center gap-1">
-                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>
                                     <p className="mb-0"><Link to="" className="links-footer">Book Online</Link></p>
                                 </div>
                             </Col>

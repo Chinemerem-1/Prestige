@@ -5,48 +5,63 @@ import imgC from "../../assets/stars.png"
 import imgw1 from "../../assets/working1.png"
 import imgw2 from "../../assets/working2.png"
 import imgw3 from "../../assets/working3.png"
+import { FaCircle } from "react-icons/fa";
+import ProcessImage from "../../Components/ProcessImage"
+import { MdPlayArrow } from "react-icons/md";
 
 const Homesection5 = () => {
 
         const processStyle = {
-            // fontFamily: "Montserrat",
-            // color: "black",
             fontSize: 24,
             fontWeight: 500
         }
 
         const processLabel = {
-            // fontFamily: "Montserrat",
-            // color: "black",
             fontSize: 40,
             fontWeight: 600
         }
 
         const processIntro = {
-            // fontFamily: "Montserrat",
-            // color: "black",
             fontSize: 14,
             fontWeight: 400
         }
 
     const processArray = [
         {
-            number: 1,
-            image: <Images src={imgw1} className="img-fluid w-100"/>,
+            item: <ProcessImage
+                src={imgw1}
+                iconLeft={<FaCircle size={20}/>}
+                iconRight={<MdPlayArrow size={42} className="first-arrow"/>}
+                floatNum="1"
+                lineStyle1={{width: "40px", border: "2px black solid"}}
+                lineStyle2={{width: "40px", border: "2px black solid"}}
+            />,
             title: "Choose A Cleaning Plan",
             description: "Whether you need a one-time deep clean or regular maintenance, we offer flexible plans tailored to your schedule and space. Picks what works best for you-simple, fast and hassle-free."
         },
 
         {
-            number: 2,
-            image: <Images src={imgw2} className="img-fluid w-100"/>,
+            item: <ProcessImage
+                src={imgw2}
+                iconRight={<FaCircle size={20} style={{opacity: "0"}}/>}
+                
+                floatNum="2"
+                lineStyle1={{width: "40px", border: "2px black solid"}}
+                lineStyle2={{width: "40px", border: "2px black solid"}}
+            />,
             title: "We clean",
             description: "Our team gets to work using eco-friendly products and proven techniques to leave every surface spotless, sanitized and fresh."
         },
 
         {
-            number: 3,
-            image: <Images src={imgw3} className="img-fluid w-100"/>,
+            item: <ProcessImage
+                src={imgw3}
+                iconLeft={<MdPlayArrow size={42} className="second-arrow"/>}
+                iconRight={<FaCircle size={20}/>}
+                floatNum="3"
+                lineStyle1={{width: "40px", border: "2px black solid"}}
+                lineStyle2={{width: "40px", border: "2px black solid"}}
+            />,
             title: "Back To Comfort",
             description: "Our expert cleaning brings peace of mind and a relaxing environment-so you can breathe easy and enjoy your space again."
         }
@@ -70,17 +85,14 @@ const Homesection5 = () => {
                 </Col>
             </Row>
 
-            <Row className=" justify-content-between px-md-5 pt-md-5 g-md-5 gy-4 process-holder">
-                
+            <Row className="g-md-0 gy-4 process-holder py-md-5">
                 {processArray.map((processes) => {
+
                     return (
-                        <Col md={4} className="" key={processes.number}>
-                            <div className="process-card ">
-                                <div className="image-wrapper">
-                                    {processes.image}
-                                    <span className="process-number">
-                                        {processes.number}
-                                    </span>
+                        <Col md={4} className="position-relative process-cards" key={processes.number}>
+                            <div className="process-card">
+                                <div className="process-card2 position-relative">
+                                    {processes.item}                                 
                                 </div>
 
                                 <h3 className="mt-4">{processes.title}</h3>
@@ -91,7 +103,7 @@ const Homesection5 = () => {
                 )})} 
             </Row>
 
-            <div className="text-center mt-4">
+            <div className="text-center mt-1">
                 <ButtonComp address="/Contact" buttonClass="butBrownClass" buttonText="Book Our Cleaning"/>
             </div>
 

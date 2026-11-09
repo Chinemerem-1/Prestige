@@ -21,7 +21,7 @@ const Login = () => {
 
   return (
     <>
-      <Container className="">
+      <Container className="py-md-0 py-5">
         <Row className="align-items-center g-0">
 
           <Col md={6} className="d-flex align-items-center justify-content-center ">
