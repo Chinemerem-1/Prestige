@@ -40,47 +40,47 @@ const Homesection7 = () => {
           </Col>
 
           <Col md={7} className=" d-flex flex-column gap-3 mt-md-0 mt-4">
-          <Row className="g-0">
-            <Col md={10} className="d-block ms-auto">
-              <div className="d-flex gap-3 align-items-center justify-content-end test-holder" style={testStyle}>
-                <Images src={test1} className=" "/>
-                <div className="test-info">
-                  <h3>James Smith</h3>
-                  <p className="mb-0">We're thrilled to hear that you’re happy with our service. It means a lot to us to know we’ve made a positive difference in your space. We look forward to keeping things spotless for you again soon!</p>
-                  <Images src={testpunc} className="apostre-test"/>
+            <Row className="g-0">
+              <Col md={10} className="d-block ms-auto">
+                <div className="d-flex gap-3 align-items-center justify-content-end test-holder" style={testStyle}>
+                  <Images src={test1} className="flex-shrink-0"/>
+                  <div className="test-info">
+                    <h3>James Smith</h3>
+                    <p className="mb-0">We're thrilled to hear that you’re happy with our service. It means a lot to us to know we’ve made a positive difference in your space. We look forward to keeping things spotless for you again soon!</p>
+                    <Images src={testpunc} className="apostre-test"/>
+                  </div>
+                  <span className="test-card-line"></span>
                 </div>
-                <span className="test-card-line"></span>
-              </div>
-            </Col>
-          </Row>
+              </Col>
+            </Row>
 
-          <Row className="g-0">
-            <Col md={10}>
-              <div className="d-flex gap-3 align-items-center justify-content-end test-holder" style={testStyle}>
-                <Images src={test2} className=" "/>
-                <div className="test-info">
-                  <h3>Bola Kayode</h3>
-                  <p className="mb-0">We're thrilled to hear that you’re happy with our service. It means a lot to us to know we’ve made a positive difference in your space. We look forward to keeping things spotless for you again soon!</p>
-                  <Images src={testpunc} className="apostre-test"/>
+            <Row className="g-0">
+              <Col md={10}>
+                <div className="d-flex gap-3 align-items-center justify-content-end test-holder" style={testStyle}>
+                  <Images src={test2} className="flex-shrink-0"/>
+                  <div className="test-info">
+                    <h3>Bola Kayode</h3>
+                    <p className="mb-0">We're thrilled to hear that you’re happy with our service. It means a lot to us to know we’ve made a positive difference in your space. We look forward to keeping things spotless for you again soon!</p>
+                    <Images src={testpunc} className="apostre-test"/>
+                  </div>
+                  <span className="test-card-line"></span>
                 </div>
-                <span className="test-card-line"></span>
-              </div>
-            </Col>
-          </Row>
+              </Col>
+            </Row>
 
-          <Row className="g-0">
-            <Col md={10} className="d-block ms-auto">
-              <div className="d-flex gap-3 align-items-center justify-content-end test-holder" style={testStyle}>
-                <Images src={test3} className=" "/>
-                <div className="test-info">
-                  <h3>Sandra John</h3>
-                  <p className="mb-0">We're thrilled to hear that you’re happy with our service. It means a lot to us to know we’ve made a positive difference in your space. We look forward to keeping things spotless for you again soon!</p>
-                  <Images src={testpunc} className="apostre-test"/>
+            <Row className="g-0">
+              <Col md={10} className="d-block ms-auto">
+                <div className="d-flex gap-3 align-items-center justify-content-end test-holder" style={testStyle}>
+                  <Images src={test3} className="flex-shrink-0"/>
+                  <div className="test-info">
+                    <h3>Sandra John</h3>
+                    <p className="mb-0">We're thrilled to hear that you’re happy with our service. It means a lot to us to know we’ve made a positive difference in your space. We look forward to keeping things spotless for you again soon!</p>
+                    <Images src={testpunc} className="apostre-test"/>
+                  </div>
+                  <span className="test-card-line"></span>
                 </div>
-                <span className="test-card-line"></span>
-              </div>
-            </Col>
-          </Row>
+              </Col>
+            </Row>
             
           </Col>
         </Row>

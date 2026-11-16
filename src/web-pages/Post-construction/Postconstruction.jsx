@@ -9,7 +9,7 @@ import slide2 from "../../assets/post-comp-slide2.png"
 import slide3 from "../../assets/post-comp-slide3.png"
 import FAQComponent from "../../Components/FAQComponent"
 import faqimg from "../../assets/post-accordion-img.svg"
-import Homesection5 from "../Home/Homesection5"
+import WorkingProcess from "../../Components/WorkingProcess"
 
 const Postconstruction = () => {
 
@@ -44,7 +44,7 @@ const Postconstruction = () => {
           listText4="Safe disposal of leftover materials and packaging"
           buttonText="Book Now"
         />
-        <Homesection5/>
+        <WorkingProcess/>
         <FAQComponent
           faqHolder="ps-md-5 pe-md-0 pt-5 pb-4 mb-5 bg-post-faq"
           faqimg={faqimg}

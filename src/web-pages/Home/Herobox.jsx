@@ -43,7 +43,7 @@ const Herobox = () => {
                         <div className="">
                             <ButtonComp address="/Login" buttonClass="butBrownClass" buttonText="Book Online"/>
                         </div>
-                        <div className="d-flex align-items-center gap-2">
+                        <div role="button" className="d-flex align-items-center gap-2">
                             <PlayComponent sizePlay={21} stylePlay={{color: "white"}} />
                             <p className="mb-0" style={heroT2}>Watch Our Story</p>
                         </div>

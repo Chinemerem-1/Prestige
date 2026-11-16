@@ -96,7 +96,7 @@ const Footer = () => {
                                 </div>
                                 <div className="d-flex links-holder align-items-center gap-1">
                                     <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>
-                                    <p className="mb-0"><Link as={HashLink} smooth to="/#home-faq" className="links-footer">FAQ</Link></p>
+                                    <p className="mb-0"><HashLink smooth to="/#faq" className="links-footer">FAQ</HashLink></p>
                                 </div>
                                 <div className="d-flex links-holder align-items-center gap-1">
                                     <PiStarFourFill size={13} style={{color: "#3A65F2", flexShrink: "0"}}/>

@@ -383,7 +383,7 @@
 
 .test-holder {
     position: relative;
-    padding: 25px 1px 44px 45px;
+    padding: 25px 3px 44px 45px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #fff;
@@ -412,11 +412,15 @@
 
 .apostre-test {
     position: absolute;
-    right: 20px;
-    bottom: 70%
+    right: 35px;
+    top: 25px
 }
 
 @media screen and (max-width: 768px) {
+    .test-holder {
+        padding: 25px 5px 30px 15px;
+    }
+
     .apostre-test {
         right: 20px;
         bottom: 78%

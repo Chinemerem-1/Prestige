@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap"
-import Accordion from 'react-bootstrap/Accordion';
 import Images from "../../Components/Images"
 import imgC from "../../assets/stars.png"
 import { useState } from "react";
@@ -53,7 +52,7 @@ const Homesection8 = () => {
         };
 
   return (
-    <Container fluid className="px-md-5 py-5" id="home-faq">
+    <Container fluid className="px-md-5 py-5">
         
         <Row className="g-0 px-md-5 justify-content-between">
             <Col md={7} className="faq-holder d-flex flex-column gap-3">

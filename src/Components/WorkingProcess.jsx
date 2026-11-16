@@ -1,15 +1,15 @@
 import { Container, Row, Col } from "react-bootstrap"
-import Images from "../../Components/Images"
-import ButtonComp from "../../Components/ButtonComp"
-import imgC from "../../assets/stars.png"
-import imgw1 from "../../assets/working1.png"
-import imgw2 from "../../assets/working2.png"
-import imgw3 from "../../assets/working3.png"
+import Images from "./Images"
+import ButtonComp from "./ButtonComp"
+import imgC from "../assets/stars.png"
+import imgw1 from "../assets/working1.png"
+import imgw2 from "../assets/working2.png"
+import imgw3 from "../assets/working3.png"
 import { FaCircle } from "react-icons/fa";
-import ProcessImage from "../../Components/ProcessImage"
+import ProcessImage from "./ProcessImage"
 import { MdPlayArrow } from "react-icons/md";
 
-const Homesection5 = () => {
+const WorkingProcess = () => {
 
         const processStyle = {
             fontSize: 24,
@@ -112,4 +112,4 @@ const Homesection5 = () => {
   )
 }
 
-export default Homesection5
+export default WorkingProcess

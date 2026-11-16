@@ -1,9 +1,9 @@
 import ChooseUs from "../../Components/ChooseUs";
 import Footer from "../../Components/Footer";
 import Herosection from "../../Components/Herosection";
+import WorkingProcess from "../../Components/WorkingProcess";
 import NavHeader from "../../Components/navHeader";
 import heroImg from "../../assets/hero pics-about.svg"
-import Homesection5 from "../Home/Homesection5";
 import Aboutsection1 from "./Aboutsection1";
 import Aboutsection2 from "./Aboutsection2";
 import Aboutsection4 from "./Aboutsection4";
@@ -18,7 +18,7 @@ function Aboutpage() {
         <Aboutsection2/>
         <ChooseUs/>
         <Aboutsection4/>
-        <Homesection5/>
+        <WorkingProcess/>
         <Aboutsection6/>
         <Footer/>
         </>
